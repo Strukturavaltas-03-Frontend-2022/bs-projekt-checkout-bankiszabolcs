@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 order-2 order-md-1">
+          <h1 class="h2">Billing address</h1>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName4"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputText4"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Username</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2"
+                >Email <span class="text-muted"> (Optional)</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Apartment, studio, or floor"
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">Country</label>
+                <select
+                  id="inputState"
+                  class="form-control selectA"
+                  data-next="selectB"
+                >
+                  <option selected>Choose...</option>
+                  <option>United States</option>
+                  <option>Hungary</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4 selectB">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Shipping address is the same as my billing address
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Save this information for next time
+                </label>
+              </div>
+            </div>
+            <h2 class="h3 mt-5 mb-3">Payment</h2>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="creditCheck"
+              />
+              <label class="form-check-label" for="creditCheck">
+                Credit card
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="debitCheck"
+              />
+              <label class="form-check-label" for="debitCheck">
+                Debit card
+              </label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="debitCheck"
+              />
+              <label class="form-check-label" for="debitCheck"> Paypal </label>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Name on card</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputcardName4"
+                  placeholder="John Doe"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >Full name as displayed on card</small
+                >
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Credit card number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputcardNumber4"
+                  placeholder="3232-3232-2121-2121"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <label for="inputEmail4">Expiration</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputexpiry4"
+                  placeholder="01/25"
+                />
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputPassword4">CCV</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputinputCcv4"
+                  placeholder="323"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-5 w-100">
+              Continue to checkout
+            </button>
+          </form>
+        </div>
+        <div class="col-md-4 order-1">
+          <header class="clearfix mb-4">
+            <h3 class="float-left">Your chart</h3>
+            <h4>
+              <span class="badge badge-secondary float-right mt-2 badge-pill"
+                >3</span
+              >
+            </h4>
+          </header>
+
+          <div class="card">
+            <ul class="list-group list-group-flush">
+              <div class="list-group-item d-flex justify-content-between">
+                <div>
+                  <div class="font-weight-bold">Product name</div>
+                  <small class="text-muted">Brief description</small>
+                </div>
+                <div class="text-muted">$12</div>
+              </div>
+              <div class="list-group-item d-flex justify-content-between">
+                <div>
+                  <div class="font-weight-bold">Product name</div>
+                  <small class="text-muted">Brief description</small>
+                </div>
+                <div class="text-muted">$8</div>
+              </div>
+              <div class="list-group-item d-flex justify-content-between">
+                <div>
+                  <div class="font-weight-bold">Product name</div>
+                  <small class="text-muted">Brief description</small>
+                </div>
+                <div class="text-muted">$5</div>
+              </div>
+              <div
+                class="list-group-item d-flex justify-content-between text-success"
+              >
+                <div>
+                  <div class="font-weight-bold">Promo code</div>
+                  <small class="text-uppercase">examplecode</small>
+                </div>
+                <div>-$5</div>
+              </div>
+              <div class="list-group-item d-flex justify-content-between">
+                <div>
+                  <div class="">Total (USD)</div>
+                </div>
+                <div class="font-weight-bold">$20</div>
+              </div>
+            </ul>
+          </div>
+          <div class="card my-3">
+            <ul class="list-group list-group-flush">
+              <div class="list-group-item px-2">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Promo code"
+                    aria-label="Promo code"
+                    aria-describedby="basic-addon2"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">
+                      Redeem
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
