@@ -1,0 +1,6 @@
+.line{
+    border: 1px solid black;
+    height: 1px;
+    width: 100%;
+    display: block
+}
